@@ -10,7 +10,7 @@ This package provided nothing more than simple CQRS implemented with MessageBus 
 ## Installation
 
 ```sh
-npm install simple-cqrs --save
+npm install clean-cqrs --save
 ```
 
 ## Usage
