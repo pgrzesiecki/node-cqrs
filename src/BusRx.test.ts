@@ -1,5 +1,5 @@
-import { BusRx } from "./BusRx";
-import { Message, MessageHandler } from "./Contracts";
+import { BusRx } from './BusRx';
+import { Message, MessageHandler } from './Contracts';
 
 let bus: BusRx<Message, MessageHandler<Message>>;
 
@@ -7,16 +7,19 @@ beforeEach(() => {
     bus = new BusRx<Message, MessageHandler<Message>>();
 });
 
-test("should give possibility to subscribe for every messages", (done: () => void) => {
+test('should give possibility to subscribe for every messages', (done: () => void) => {
 
     let nextCount = 0;
-    const MessageStub1 = class implements Message {};
-    const MessageStub2 = class implements Message {};
-    const MessageStub3 = class implements Message {};
+    const MessageStub1 = class implements Message {
+    };
+    const MessageStub2 = class implements Message {
+    };
+    const MessageStub3 = class implements Message {
+    };
 
-    bus.bindHandler({handle: () => Promise.resolve("One")} as MessageHandler<Message>, MessageStub1);
-    bus.bindHandler({handle: () => Promise.resolve("Two")} as MessageHandler<Message>, MessageStub2);
-    bus.bindHandler({handle: () => Promise.resolve("Three")} as MessageHandler<Message>, MessageStub3);
+    bus.bindHandler({handle: () => Promise.resolve('One')} as MessageHandler<Message>, MessageStub1);
+    bus.bindHandler({handle: () => Promise.resolve('Two')} as MessageHandler<Message>, MessageStub2);
+    bus.bindHandler({handle: () => Promise.resolve('Three')} as MessageHandler<Message>, MessageStub3);
 
     bus.subscribe(() => ++nextCount);
 

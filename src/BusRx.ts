@@ -1,7 +1,7 @@
-import { Observable } from "rxjs/Observable";
-import { Subject } from "rxjs/Subject";
-import { Bus } from "./Bus";
-import { Message, MessageBus, MessageBusRx, MessageHandler } from "./Contracts";
+import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
+import { Bus } from './Bus';
+import { Message, MessageBus, MessageBusRx, MessageHandler } from './Contracts';
 
 export class BusRx<C extends Message, H extends MessageHandler<C>>
     extends Observable<C>

@@ -15,12 +15,14 @@
     "lint:fix": "tslint --fix -c tslint.json 'src/**/*'",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "compile": "rm -rf ./dist && tsc"
+    "compile": "rm -rf ./dist && tsc",
+    "precommit": "npm test && npm run lint"
   },
   "author": "Pawel Grzesiecki <pawel.grzesiecki@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^22.2.0",
+    "husky": "^0.14.3",
     "jest": "^22.4.2",
     "ts-jest": "^22.4.1",
     "tslint": "^5.9.1",

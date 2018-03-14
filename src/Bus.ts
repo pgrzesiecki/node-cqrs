@@ -1,5 +1,5 @@
-import { Message, MessageBus, MessageHandler } from "./Contracts";
-import { MessageBusException } from "./Exceptions";
+import { Message, MessageBus, MessageHandler } from './Contracts';
+import { MessageBusException } from './Exceptions';
 
 export class Bus<C extends Message, H extends MessageHandler<C>> implements MessageBus<C, H> {
 
