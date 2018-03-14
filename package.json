@@ -1,6 +1,6 @@
 {
   "name": "clean-cqrs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple and clean Command Query Responsibility Segregation for NodeJS ecosystem",
   "keywords": [
     "cqrs",
