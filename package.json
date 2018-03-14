@@ -15,8 +15,12 @@
     "lint:fix": "tslint --fix -c tslint.json 'src/**/*'",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "compile": "rm -rf ./dist && tsc",
+    "build": "rm -rf ./dist && tsc",
     "precommit": "npm test && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pgrzesiecki/node-cqrs.git"
   },
   "author": "Pawel Grzesiecki <pawel.grzesiecki@gmail.com>",
   "license": "ISC",
