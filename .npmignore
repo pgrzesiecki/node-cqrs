@@ -1,1 +1,7 @@
 src/
+coverage/
+.idea/
+tsconfig.json
+tslint.json
+.travis.yml
+.gitignore
