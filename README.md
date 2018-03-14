@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pgrzesiecki/node-cqrs.svg?branch=master)](https://travis-ci.org/pgrzesiecki/node-cqrs)
+
 # NodeJS CQRS
 
 Command Query Responsibility Segregation for NodeJS ecosystem.    
