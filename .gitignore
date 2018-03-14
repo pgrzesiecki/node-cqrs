@@ -1,0 +1,6 @@
+dist/*.test.js
+dist/*.test.d.ts
+coverage/
+node_modules/
+.idea/
+package-lock.json

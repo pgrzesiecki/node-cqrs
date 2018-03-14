@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    "max-classes-per-file": [true, 1, "exclude-class-expressions"],
+    "no-empty-interface": false,
+    "interface-name": [true, "never-prefix"]
+  }
+}
